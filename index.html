@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre feuille ciseaux</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pierre feuille ciseaux</h1>
+    <h2>Scores :</h2>
+        <div class="game-score-container">
+            <div>
+                <span>Vous : </span>
+                <span id="human-score"></span>
+            </div>
+            <div>
+                <span>Ordinateur : </span>
+                <span id="ia-score"></span>
+            </div>
+        </div>
+    <div class="game-container">
+        <div class="ia-game">
+            <h2>Ordinateur</h2>
+            <div id="ia-game-content"></div>
+            <div class="button-group">
+                <button class="game-button" data-name="pierre" disabled> ✊ Pierre</button>
+                <button class="game-button" data-name="feuille" disabled> 🫱 Feuille</button>
+                <button class="game-button" data-name="ciseaux" disabled> ✌️ Ciseaux</button>
+            </div>
+        </div>
+        <div class="human-game">
+            <h2>Vous</h2>
+            <div id="human-game-content">
+            </div>
+            <div class="button-group">
+                <button class="game-button" data-name="pierre"> ✊ Pierre</button>
+                <button class="game-button" data-name="feuille"> 🫱 Feuille</button>
+                <button class="game-button" data-name="ciseaux"> ✌️ Ciseaux</button>
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
